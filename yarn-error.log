@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\CAA1831\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\MongoDB\Server\5.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\CAA1831\AppData\Local\Microsoft\WindowsApps;C:\Users\CAA1831\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\CAA1831\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\CAA1831\Documents\node-IGNITE2\api\package.json: Unexpected token } in JSON at position 277
+      at JSON.parse (<anonymous>)
+      at C:\Users\CAA1831\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\CAA1831\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\CAA1831\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    },
+    "dependencies": {
+      "express": "^4.17.2",
+      "uuid": "^8.3.2",
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.13",
+      "@types/uuid": "^8.3.4",
+      "@typescript-eslint/eslint-plugin": "^5.9.0",
+      "@typescript-eslint/parser": "^5.9.0",
+      "eslint": "^8.6.0",
+      "eslint-config-airbnb-base": "^15.0.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-import-resolver-typescript": "^2.5.0",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-import-helpers": "^1.2.1",
+      "eslint-plugin-prettier": "^4.0.0",
+      "prettier": "^2.5.1",
+      "ts-node-dev": "^1.1.8",
+      "typescript": "^4.5.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
