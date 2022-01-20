@@ -3,10 +3,10 @@ import { getRepository, Repository } from "typeorm";
 import { Category } from "../../entities/Category";
 import {
     ICreateCategoryDTO,
-    ICatergoriesRepository,
+    ICategoriesRepository,
 } from "../ICategoriesRepository";
 
-class CategoriesRepository implements ICatergoriesRepository {
+class CategoriesRepository implements ICategoriesRepository {
     private repository: Repository<Category>;
 
     constructor() {
