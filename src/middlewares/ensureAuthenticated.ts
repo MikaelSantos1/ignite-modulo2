@@ -33,7 +33,7 @@ export async function ensureAuthenticed(
             throw new AppError("User does not exists", 401);
         }
         request.user = {
-            id: user.id,
+            id: user_id,
         };
         next();
     } catch (err) {
