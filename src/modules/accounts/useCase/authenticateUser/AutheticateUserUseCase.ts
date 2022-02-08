@@ -1,4 +1,4 @@
-import { AppError } from "@errors/AppError";
+import { AppError } from "@shared/errors/AppError";
 import { IUserRepository } from "@modules/accounts/repository/IUsersRepository";
 import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
