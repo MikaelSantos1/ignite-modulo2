@@ -1,9 +1,8 @@
-import { compare } from "bcrypt";
+import { AppError } from "@errors/AppError";
+import { IUserRepository } from "@modules/accounts/repository/IUsersRepository";
+import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
-
-import { AppError } from "../../../../errors/AppError";
-import { IUserRepository } from "../../repository/IUsersRepository";
 
 interface IRequest {
     email: string;
