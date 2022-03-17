@@ -29,7 +29,7 @@ describe("Authenticate user", () => {
             email: user.email,
             password: user.password,
         });
-        console.log(result);
+
         expect(result).toHaveProperty("token");
     });
     it("Should not be to authenticate a none existing user", () => {
