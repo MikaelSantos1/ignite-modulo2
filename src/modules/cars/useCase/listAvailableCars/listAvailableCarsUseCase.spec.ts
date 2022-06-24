@@ -23,7 +23,6 @@ describe("List cars", () => {
         });
         const cars = await listAvailableCarsUseCase.execute({});
         expect(cars).toEqual([car]);
-        console.log(cars);
     });
     it("Should be able to all available car by name", async () => {
         const car = await carsRepositoryInMemory.create({
