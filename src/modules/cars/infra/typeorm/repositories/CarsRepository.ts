@@ -9,6 +9,9 @@ class CarsRepository implements ICarsRepository {
     constructor() {
         this.repository = getRepository(Car);
     }
+    updateAvailable(id: string, available: boolean): Promise<void> {
+        throw new Error("Method not implemented.");
+    }
 
     async create({
         brand,
